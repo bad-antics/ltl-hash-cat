@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_hash_cat
+
+import std::io
+use ltl_hash_cat as lib
+
+fn main() {
+    io::println("ltl_hash_cat demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
